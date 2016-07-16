@@ -1,0 +1,4115 @@
+# 1 "context.c"
+# 1 "/opt/projects/source/nodejs/libtask//"
+# 1 "<built-in>"
+# 1 "<命令行>"
+# 1 "context.c"
+
+
+# 1 "taskimpl.h" 1
+# 27 "taskimpl.h"
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/errno.h" 1 3 4
+# 29 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/errno.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/features.h" 1 3 4
+# 187 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/features.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_config.h" 1 3 4
+# 188 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/features.h" 2 3 4
+# 416 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/features.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/cdefs.h" 1 3 4
+# 417 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/features.h" 2 3 4
+# 30 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/errno.h" 2 3 4
+
+
+
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/errno.h" 1 3 4
+# 25 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/errno.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/linux/errno.h" 1 3 4
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm/errno.h" 1 3 4
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/errno.h" 1 3 4
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/errno-base.h" 1 3 4
+# 5 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/errno.h" 2 3 4
+# 5 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm/errno.h" 2 3 4
+# 5 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/linux/errno.h" 2 3 4
+# 26 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/errno.h" 2 3 4
+# 45 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/errno.h" 3 4
+extern int *__errno_location (void) __attribute__ ((__nothrow__)) __attribute__ ((__const__));
+# 37 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/errno.h" 2 3 4
+# 59 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/errno.h" 3 4
+
+# 28 "taskimpl.h" 2
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 1 3 4
+# 35 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h" 1 3 4
+# 211 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h" 3 4
+typedef unsigned int size_t;
+# 323 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h" 3 4
+typedef unsigned int wchar_t;
+# 36 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 2 3 4
+
+
+# 98 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+
+
+typedef struct
+  {
+    int quot;
+    int rem;
+  } div_t;
+
+
+
+typedef struct
+  {
+    long int quot;
+    long int rem;
+  } ldiv_t;
+
+
+
+
+
+
+
+__extension__ typedef struct
+  {
+    long long int quot;
+    long long int rem;
+  } lldiv_t;
+
+
+# 147 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern size_t _stdlib_mb_cur_max (void) __attribute__ ((__nothrow__)) ;
+
+
+
+
+
+
+
+
+
+extern double atof (__const char *__nptr)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+extern int atoi (__const char *__nptr)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+
+extern long int atol (__const char *__nptr)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+
+__extension__ extern long long int atoll (__const char *__nptr)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+
+
+extern double strtod (__const char *__restrict __nptr,
+        char **__restrict __endptr)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+
+extern float strtof (__const char *__restrict __nptr,
+       char **__restrict __endptr) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+extern long double strtold (__const char *__restrict __nptr,
+       char **__restrict __endptr)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+
+
+extern long int strtol (__const char *__restrict __nptr,
+   char **__restrict __endptr, int __base)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+extern unsigned long int strtoul (__const char *__restrict __nptr,
+      char **__restrict __endptr, int __base)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 1 3 4
+# 29 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 3 4
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h" 1 3 4
+# 28 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/wordsize.h" 1 3 4
+# 29 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h" 2 3 4
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h" 1 3 4
+# 32 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h" 2 3 4
+
+
+typedef unsigned char __u_char;
+typedef unsigned short int __u_short;
+typedef unsigned int __u_int;
+typedef unsigned long int __u_long;
+
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short int __int16_t;
+typedef unsigned short int __uint16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
+
+
+
+
+__extension__ typedef signed long long int __int64_t;
+__extension__ typedef unsigned long long int __uint64_t;
+
+
+
+
+
+
+
+__extension__ typedef long long int __quad_t;
+__extension__ typedef unsigned long long int __u_quad_t;
+# 134 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/typesizes.h" 1 3 4
+# 135 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h" 2 3 4
+
+
+__extension__ typedef __u_quad_t __dev_t;
+__extension__ typedef unsigned int __uid_t;
+__extension__ typedef unsigned int __gid_t;
+__extension__ typedef unsigned long int __ino_t;
+__extension__ typedef __u_quad_t __ino64_t;
+__extension__ typedef unsigned int __mode_t;
+__extension__ typedef unsigned int __nlink_t;
+__extension__ typedef long int __off_t;
+__extension__ typedef __quad_t __off64_t;
+__extension__ typedef int __pid_t;
+__extension__ typedef struct { int __val[2]; } __fsid_t;
+__extension__ typedef long int __clock_t;
+__extension__ typedef unsigned long int __rlim_t;
+__extension__ typedef __u_quad_t __rlim64_t;
+__extension__ typedef unsigned int __id_t;
+__extension__ typedef long int __time_t;
+__extension__ typedef unsigned int __useconds_t;
+__extension__ typedef long int __suseconds_t;
+
+__extension__ typedef int __daddr_t;
+__extension__ typedef long int __swblk_t;
+__extension__ typedef int __key_t;
+
+
+__extension__ typedef int __clockid_t;
+
+
+__extension__ typedef void * __timer_t;
+
+
+__extension__ typedef long int __blksize_t;
+
+
+
+
+__extension__ typedef long int __blkcnt_t;
+__extension__ typedef __quad_t __blkcnt64_t;
+
+
+__extension__ typedef unsigned long int __fsblkcnt_t;
+__extension__ typedef __u_quad_t __fsblkcnt64_t;
+
+
+__extension__ typedef unsigned long int __fsfilcnt_t;
+__extension__ typedef __u_quad_t __fsfilcnt64_t;
+
+__extension__ typedef int __ssize_t;
+
+
+
+typedef __off64_t __loff_t;
+typedef __quad_t *__qaddr_t;
+typedef char *__caddr_t;
+
+
+__extension__ typedef int __intptr_t;
+
+
+__extension__ typedef unsigned int __socklen_t;
+
+
+
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h" 1 3 4
+# 23 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sched.h" 1 3 4
+# 95 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sched.h" 3 4
+struct __sched_param
+  {
+    int __sched_priority;
+  };
+# 24 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h" 2 3 4
+
+
+struct _pthread_fastlock
+{
+  long int __status;
+  int __spinlock;
+
+};
+
+
+
+typedef struct _pthread_descr_struct *_pthread_descr;
+
+
+
+
+
+typedef struct __pthread_attr_s
+{
+  int __detachstate;
+  int __schedpolicy;
+  struct __sched_param __schedparam;
+  int __inheritsched;
+  int __scope;
+  size_t __guardsize;
+  int __stackaddr_set;
+  void *__stackaddr;
+  size_t __stacksize;
+} pthread_attr_t;
+
+
+
+typedef struct
+{
+  struct _pthread_fastlock __c_lock;
+  _pthread_descr __c_waiting;
+} pthread_cond_t;
+
+
+
+typedef struct
+{
+  int __dummy;
+} pthread_condattr_t;
+
+
+typedef unsigned int pthread_key_t;
+
+
+
+
+
+typedef struct
+{
+  int __m_reserved;
+  int __m_count;
+  _pthread_descr __m_owner;
+  int __m_kind;
+  struct _pthread_fastlock __m_lock;
+} pthread_mutex_t;
+
+
+
+typedef struct
+{
+  int __mutexkind;
+} pthread_mutexattr_t;
+
+
+
+typedef int pthread_once_t;
+
+
+
+
+typedef struct _pthread_rwlock_t
+{
+  struct _pthread_fastlock __rw_lock;
+  int __rw_readers;
+  _pthread_descr __rw_writer;
+  _pthread_descr __rw_read_waiting;
+  _pthread_descr __rw_write_waiting;
+  int __rw_kind;
+  int __rw_pshared;
+} pthread_rwlock_t;
+
+
+
+typedef struct
+{
+  int __lockkind;
+  int __pshared;
+} pthread_rwlockattr_t;
+
+
+
+
+typedef volatile int pthread_spinlock_t;
+
+
+typedef struct {
+  struct _pthread_fastlock __ba_lock;
+  int __ba_required;
+  int __ba_present;
+  _pthread_descr __ba_waiting;
+} pthread_barrier_t;
+
+
+typedef struct {
+  int __pshared;
+} pthread_barrierattr_t;
+
+
+
+
+
+typedef unsigned long int pthread_t;
+# 203 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h" 2 3 4
+# 32 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 2 3 4
+
+
+
+typedef __u_char u_char;
+typedef __u_short u_short;
+typedef __u_int u_int;
+typedef __u_long u_long;
+typedef __quad_t quad_t;
+typedef __u_quad_t u_quad_t;
+typedef __fsid_t fsid_t;
+
+
+
+
+typedef __loff_t loff_t;
+
+
+
+typedef __ino_t ino_t;
+# 62 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 3 4
+typedef __dev_t dev_t;
+
+
+
+
+typedef __gid_t gid_t;
+
+
+
+
+typedef __mode_t mode_t;
+
+
+
+
+typedef __nlink_t nlink_t;
+
+
+
+
+typedef __uid_t uid_t;
+
+
+
+
+
+typedef __off_t off_t;
+# 100 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 3 4
+typedef __pid_t pid_t;
+
+
+
+
+typedef __id_t id_t;
+
+
+
+
+typedef __ssize_t ssize_t;
+
+
+
+
+
+typedef __daddr_t daddr_t;
+typedef __caddr_t caddr_t;
+
+
+
+
+
+typedef __key_t key_t;
+# 133 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 1 3 4
+# 75 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+
+
+typedef __time_t time_t;
+
+
+
+# 93 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+typedef __clockid_t clockid_t;
+# 105 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+typedef __timer_t timer_t;
+# 134 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 2 3 4
+# 147 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h" 1 3 4
+# 148 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 2 3 4
+
+
+
+typedef unsigned long int ulong;
+typedef unsigned short int ushort;
+typedef unsigned int uint;
+# 195 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 3 4
+typedef int int8_t __attribute__ ((__mode__ (__QI__)));
+typedef int int16_t __attribute__ ((__mode__ (__HI__)));
+typedef int int32_t __attribute__ ((__mode__ (__SI__)));
+typedef int int64_t __attribute__ ((__mode__ (__DI__)));
+
+
+typedef unsigned int u_int8_t __attribute__ ((__mode__ (__QI__)));
+typedef unsigned int u_int16_t __attribute__ ((__mode__ (__HI__)));
+typedef unsigned int u_int32_t __attribute__ ((__mode__ (__SI__)));
+typedef unsigned int u_int64_t __attribute__ ((__mode__ (__DI__)));
+
+typedef int register_t __attribute__ ((__mode__ (__word__)));
+# 217 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/endian.h" 1 3 4
+# 37 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/endian.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/endian.h" 1 3 4
+# 38 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/endian.h" 2 3 4
+# 61 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/endian.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/byteswap.h" 1 3 4
+# 23 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/byteswap.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap.h" 1 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap-common.h" 1 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap.h" 2 3 4
+# 24 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/byteswap.h" 2 3 4
+# 62 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/endian.h" 2 3 4
+# 218 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 2 3 4
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h" 1 3 4
+# 31 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/select.h" 1 3 4
+# 32 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h" 2 3 4
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h" 1 3 4
+# 23 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h" 3 4
+typedef int __sig_atomic_t;
+# 40 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h" 3 4
+typedef struct {
+ unsigned long __val[(64 / (8 * sizeof (unsigned long)))];
+} __sigset_t;
+# 35 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h" 2 3 4
+
+
+
+typedef __sigset_t sigset_t;
+
+
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 1 3 4
+# 121 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+struct timespec
+  {
+    __time_t tv_sec;
+    long int tv_nsec;
+  };
+# 45 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h" 2 3 4
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h" 1 3 4
+# 73 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h" 3 4
+struct timeval
+  {
+    __time_t tv_sec;
+    __suseconds_t tv_usec;
+  };
+# 47 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h" 2 3 4
+
+
+typedef __suseconds_t suseconds_t;
+
+
+
+
+
+typedef long int __fd_mask;
+# 67 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h" 3 4
+typedef struct
+  {
+
+
+
+
+
+
+    __fd_mask __fds_bits[1024 / (8 * sizeof (__fd_mask))];
+
+
+  } fd_set;
+
+
+
+
+
+
+typedef __fd_mask fd_mask;
+# 99 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h" 3 4
+
+# 109 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h" 3 4
+extern int select (int __nfds, fd_set *__restrict __readfds,
+     fd_set *__restrict __writefds,
+     fd_set *__restrict __exceptfds,
+     struct timeval *__restrict __timeout);
+# 121 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h" 3 4
+extern int pselect (int __nfds, fd_set *__restrict __readfds,
+      fd_set *__restrict __writefds,
+      fd_set *__restrict __exceptfds,
+      const struct timespec *__restrict __timeout,
+      const __sigset_t *__restrict __sigmask);
+
+
+
+# 221 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 2 3 4
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/sysmacros.h" 1 3 4
+# 29 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/sysmacros.h" 3 4
+__extension__
+static __inline unsigned int gnu_dev_major (unsigned long long int __dev)
+     __attribute__ ((__nothrow__));
+__extension__
+static __inline unsigned int gnu_dev_minor (unsigned long long int __dev)
+     __attribute__ ((__nothrow__));
+__extension__
+static __inline unsigned long long int gnu_dev_makedev (unsigned int __major,
+       unsigned int __minor)
+     __attribute__ ((__nothrow__));
+
+
+__extension__ static __inline unsigned int
+__attribute__ ((__nothrow__)) gnu_dev_major (unsigned long long int __dev)
+{
+  return ((__dev >> 8) & 0xfff) | ((unsigned int) (__dev >> 32) & ~0xfff);
+}
+
+__extension__ static __inline unsigned int
+__attribute__ ((__nothrow__)) gnu_dev_minor (unsigned long long int __dev)
+{
+  return (__dev & 0xff) | ((unsigned int) (__dev >> 12) & ~0xff);
+}
+
+__extension__ static __inline unsigned long long int
+__attribute__ ((__nothrow__)) gnu_dev_makedev (unsigned int __major, unsigned int __minor)
+{
+  return ((__minor & 0xff) | ((__major & 0xfff) << 8)
+   | (((unsigned long long int) (__minor & ~0xff)) << 12)
+   | (((unsigned long long int) (__major & ~0xfff)) << 32));
+}
+# 224 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 2 3 4
+# 235 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 3 4
+typedef __blkcnt_t blkcnt_t;
+
+
+
+typedef __fsblkcnt_t fsblkcnt_t;
+
+
+
+typedef __fsfilcnt_t fsfilcnt_t;
+# 270 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h" 1 3 4
+# 271 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h" 2 3 4
+
+
+
+# 210 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 2 3 4
+
+
+__extension__
+extern quad_t strtoq (__const char *__restrict __nptr,
+        char **__restrict __endptr, int __base)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+__extension__
+extern u_quad_t strtouq (__const char *__restrict __nptr,
+           char **__restrict __endptr, int __base)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+
+__extension__
+extern long long int strtoll (__const char *__restrict __nptr,
+         char **__restrict __endptr, int __base)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+__extension__
+extern unsigned long long int strtoull (__const char *__restrict __nptr,
+     char **__restrict __endptr, int __base)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+# 299 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern char *l64a (long int __n) __attribute__ ((__nothrow__)) ;
+
+
+extern long int a64l (__const char *__s)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+# 315 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern long int random (void) __attribute__ ((__nothrow__));
+
+
+extern void srandom (unsigned int __seed) __attribute__ ((__nothrow__));
+
+
+
+
+
+extern char *initstate (unsigned int __seed, char *__statebuf,
+   size_t __statelen) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2)));
+
+
+
+extern char *setstate (char *__statebuf) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+
+struct random_data
+  {
+    int32_t *fptr;
+    int32_t *rptr;
+    int32_t *state;
+
+
+
+
+
+
+    int8_t rand_type;
+    int8_t rand_deg;
+    int8_t rand_sep;
+
+    int32_t *end_ptr;
+  };
+
+extern int random_r (struct random_data *__restrict __buf,
+       int32_t *__restrict __result) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern int srandom_r (unsigned int __seed, struct random_data *__buf)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2)));
+
+extern int initstate_r (unsigned int __seed, char *__restrict __statebuf,
+   size_t __statelen,
+   struct random_data *__restrict __buf)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2, 4)));
+
+extern int setstate_r (char *__restrict __statebuf,
+         struct random_data *__restrict __buf)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+
+extern int rand (void) __attribute__ ((__nothrow__));
+
+extern void srand (unsigned int __seed) __attribute__ ((__nothrow__));
+
+
+
+
+extern int rand_r (unsigned int *__seed) __attribute__ ((__nothrow__));
+# 391 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern double drand48 (void) __attribute__ ((__nothrow__));
+extern double erand48 (unsigned short int __xsubi[3]) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern long int lrand48 (void) __attribute__ ((__nothrow__));
+extern long int nrand48 (unsigned short int __xsubi[3])
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern long int mrand48 (void) __attribute__ ((__nothrow__));
+extern long int jrand48 (unsigned short int __xsubi[3])
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern void srand48 (long int __seedval) __attribute__ ((__nothrow__));
+extern unsigned short int *seed48 (unsigned short int __seed16v[3])
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+extern void lcong48 (unsigned short int __param[7]) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+struct drand48_data
+  {
+    unsigned short int __x[3];
+    unsigned short int __old_x[3];
+    unsigned short int __c;
+    unsigned short int __init;
+    unsigned long long int __a;
+  };
+
+
+
+extern int drand48_r (struct drand48_data *__restrict __buffer,
+        double *__restrict __result) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+extern int erand48_r (unsigned short int __xsubi[3],
+        struct drand48_data *__restrict __buffer,
+        double *__restrict __result) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern int lrand48_r (struct drand48_data *__restrict __buffer,
+        long int *__restrict __result)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+extern int nrand48_r (unsigned short int __xsubi[3],
+        struct drand48_data *__restrict __buffer,
+        long int *__restrict __result)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int mrand48_r (struct drand48_data *__restrict __buffer,
+        long int *__restrict __result)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+extern int jrand48_r (unsigned short int __xsubi[3],
+        struct drand48_data *__restrict __buffer,
+        long int *__restrict __result)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int srand48_r (long int __seedval, struct drand48_data *__buffer)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2)));
+
+extern int seed48_r (unsigned short int __seed16v[3],
+       struct drand48_data *__buffer) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern int lcong48_r (unsigned short int __param[7],
+        struct drand48_data *__buffer)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+
+
+
+
+extern void *malloc (size_t __size) __attribute__ ((__nothrow__)) __attribute__ ((__malloc__)) ;
+
+
+
+extern void *calloc (size_t __nmemb, size_t __size)
+     __attribute__ ((__nothrow__)) __attribute__ ((__malloc__)) ;
+
+
+
+
+
+
+
+
+
+
+extern void *realloc (void *__ptr, size_t __size)
+     __attribute__ ((__nothrow__)) __attribute__ ((__warn_unused_result__));
+
+extern void free (void *__ptr) __attribute__ ((__nothrow__));
+
+
+
+
+
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/alloca.h" 1 3 4
+# 25 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/alloca.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h" 1 3 4
+# 26 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/alloca.h" 2 3 4
+
+
+
+
+
+
+
+extern void *alloca (size_t __size) __attribute__ ((__nothrow__));
+
+
+
+
+
+
+
+# 499 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 2 3 4
+
+
+
+
+extern void *valloc (size_t __size) __attribute__ ((__nothrow__)) __attribute__ ((__malloc__)) ;
+
+
+
+
+extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+extern void abort (void) __attribute__ ((__nothrow__)) __attribute__ ((__noreturn__));
+
+
+
+extern int atexit (void (*__func) (void)) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern int on_exit (void (*__func) (int __status, void *__arg), void *__arg)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+extern void exit (int __status) __attribute__ ((__nothrow__)) __attribute__ ((__noreturn__));
+
+
+
+
+
+
+extern void _Exit (int __status) __attribute__ ((__nothrow__)) __attribute__ ((__noreturn__));
+
+
+
+
+
+
+extern char *getenv (__const char *__name) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+# 560 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern int putenv (char *__string) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+extern int setenv (__const char *__name, __const char *__value, int __replace)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2)));
+
+
+extern int unsetenv (__const char *__name) __attribute__ ((__nothrow__));
+# 586 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern int clearenv (void) __attribute__ ((__nothrow__));
+# 596 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern char *mktemp (char *__template) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+# 608 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) ;
+# 628 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern char *mkdtemp (char *__template) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+
+
+
+
+extern int system (__const char *__command) ;
+
+# 654 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern char *realpath (__const char *__restrict __name,
+         char *__restrict __resolved) __attribute__ ((__nothrow__)) ;
+
+
+
+
+
+
+typedef int (*__compar_fn_t) (__const void *, __const void *);
+
+
+
+
+
+
+
+
+
+extern void *bsearch (__const void *__key, __const void *__base,
+        size_t __nmemb, size_t __size, __compar_fn_t __compar)
+     __attribute__ ((__nonnull__ (1, 2, 5))) ;
+
+
+
+extern void qsort (void *__base, size_t __nmemb, size_t __size,
+     __compar_fn_t __compar) __attribute__ ((__nonnull__ (1, 4)));
+
+
+
+extern int abs (int __x) __attribute__ ((__nothrow__)) __attribute__ ((__const__)) ;
+extern long int labs (long int __x) __attribute__ ((__nothrow__)) __attribute__ ((__const__)) ;
+
+
+
+__extension__ extern long long int llabs (long long int __x)
+     __attribute__ ((__nothrow__)) __attribute__ ((__const__)) ;
+
+
+
+
+
+
+
+extern div_t div (int __numer, int __denom)
+     __attribute__ ((__nothrow__)) __attribute__ ((__const__)) ;
+extern ldiv_t ldiv (long int __numer, long int __denom)
+     __attribute__ ((__nothrow__)) __attribute__ ((__const__)) ;
+
+
+
+
+__extension__ extern lldiv_t lldiv (long long int __numer,
+        long long int __denom)
+     __attribute__ ((__nothrow__)) __attribute__ ((__const__)) ;
+
+# 734 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern char *gcvt (double __value, int __ndigit, char *__buf)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (3))) ;
+# 773 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+
+
+
+extern int mblen (__const char *__s, size_t __n) __attribute__ ((__nothrow__)) ;
+
+
+extern int mbtowc (wchar_t *__restrict __pwc,
+     __const char *__restrict __s, size_t __n) __attribute__ ((__nothrow__)) ;
+
+
+extern int wctomb (char *__s, wchar_t __wchar) __attribute__ ((__nothrow__)) ;
+
+
+
+extern size_t mbstowcs (wchar_t *__restrict __pwcs,
+   __const char *__restrict __s, size_t __n) __attribute__ ((__nothrow__));
+
+extern size_t wcstombs (char *__restrict __s,
+   __const wchar_t *__restrict __pwcs, size_t __n)
+     __attribute__ ((__nothrow__));
+
+# 832 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+extern int posix_openpt (int __oflag) ;
+# 887 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h" 3 4
+
+# 29 "taskimpl.h" 2
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 1 3 4
+# 28 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+
+# 173 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/posix_opt.h" 1 3 4
+# 174 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 2 3 4
+# 197 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h" 1 3 4
+# 198 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 2 3 4
+# 226 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+typedef __useconds_t useconds_t;
+# 238 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+typedef __intptr_t intptr_t;
+
+
+
+
+
+
+typedef __socklen_t socklen_t;
+# 258 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int access (__const char *__name, int __type) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+# 275 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int faccessat (int __fd, __const char *__file, int __type, int __flag)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2))) ;
+# 301 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern __off_t lseek (int __fd, __off_t __offset, int __whence) __attribute__ ((__nothrow__));
+# 320 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int close (int __fd);
+
+
+
+
+
+
+extern ssize_t read (int __fd, void *__buf, size_t __nbytes) ;
+
+
+
+
+
+extern ssize_t write (int __fd, __const void *__buf, size_t __n) ;
+# 384 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int pipe (int __pipedes[2]) __attribute__ ((__nothrow__)) ;
+# 399 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern unsigned int alarm (unsigned int __seconds) __attribute__ ((__nothrow__));
+# 411 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern unsigned int sleep (unsigned int __seconds);
+
+
+
+
+
+
+
+extern __useconds_t ualarm (__useconds_t __value, __useconds_t __interval)
+     __attribute__ ((__nothrow__));
+
+
+
+
+
+
+extern int usleep (__useconds_t __useconds);
+# 436 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int pause (void);
+
+
+
+extern int chown (__const char *__file, __uid_t __owner, __gid_t __group)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+extern int fchown (int __fd, __uid_t __owner, __gid_t __group) __attribute__ ((__nothrow__)) ;
+
+
+
+
+extern int lchown (__const char *__file, __uid_t __owner, __gid_t __group)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+
+
+extern int fchownat (int __fd, __const char *__file, __uid_t __owner,
+       __gid_t __group, int __flag)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2))) ;
+
+
+
+extern int chdir (__const char *__path) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+extern int fchdir (int __fd) __attribute__ ((__nothrow__)) ;
+# 478 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern char *getcwd (char *__buf, size_t __size) __attribute__ ((__nothrow__)) ;
+# 497 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int dup (int __fd) __attribute__ ((__nothrow__)) ;
+
+
+extern int dup2 (int __fd, int __fd2) __attribute__ ((__nothrow__));
+
+
+extern char **__environ;
+
+
+
+
+
+
+
+extern int execve (__const char *__path, char *__const __argv[],
+     char *__const __envp[]) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+# 523 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int execv (__const char *__path, char *__const __argv[])
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern int execle (__const char *__path, __const char *__arg, ...)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern int execl (__const char *__path, __const char *__arg, ...)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern int execvp (__const char *__file, char *__const __argv[])
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int execlp (__const char *__file, __const char *__arg, ...)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int nice (int __inc) __attribute__ ((__nothrow__)) ;
+
+
+
+
+extern void _exit (int __status) __attribute__ ((__noreturn__));
+
+
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/confname.h" 1 3 4
+# 26 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/confname.h" 3 4
+enum
+  {
+    _PC_LINK_MAX,
+
+    _PC_MAX_CANON,
+
+    _PC_MAX_INPUT,
+
+    _PC_NAME_MAX,
+
+    _PC_PATH_MAX,
+
+    _PC_PIPE_BUF,
+
+    _PC_CHOWN_RESTRICTED,
+
+    _PC_NO_TRUNC,
+
+    _PC_VDISABLE,
+
+    _PC_SYNC_IO,
+
+    _PC_ASYNC_IO,
+
+    _PC_PRIO_IO,
+
+    _PC_SOCK_MAXBUF,
+
+    _PC_FILESIZEBITS,
+
+    _PC_REC_INCR_XFER_SIZE,
+
+    _PC_REC_MAX_XFER_SIZE,
+
+    _PC_REC_MIN_XFER_SIZE,
+
+    _PC_REC_XFER_ALIGN,
+
+    _PC_ALLOC_SIZE_MIN,
+
+    _PC_SYMLINK_MAX,
+
+    _PC_2_SYMLINKS
+
+  };
+
+
+enum
+  {
+    _SC_ARG_MAX,
+
+    _SC_CHILD_MAX,
+
+    _SC_CLK_TCK,
+
+    _SC_NGROUPS_MAX,
+
+    _SC_OPEN_MAX,
+
+    _SC_STREAM_MAX,
+
+    _SC_TZNAME_MAX,
+
+    _SC_JOB_CONTROL,
+
+    _SC_SAVED_IDS,
+
+    _SC_REALTIME_SIGNALS,
+
+    _SC_PRIORITY_SCHEDULING,
+
+    _SC_TIMERS,
+
+    _SC_ASYNCHRONOUS_IO,
+
+    _SC_PRIORITIZED_IO,
+
+    _SC_SYNCHRONIZED_IO,
+
+    _SC_FSYNC,
+
+    _SC_MAPPED_FILES,
+
+    _SC_MEMLOCK,
+
+    _SC_MEMLOCK_RANGE,
+
+    _SC_MEMORY_PROTECTION,
+
+    _SC_MESSAGE_PASSING,
+
+    _SC_SEMAPHORES,
+
+    _SC_SHARED_MEMORY_OBJECTS,
+
+    _SC_AIO_LISTIO_MAX,
+
+    _SC_AIO_MAX,
+
+    _SC_AIO_PRIO_DELTA_MAX,
+
+    _SC_DELAYTIMER_MAX,
+
+    _SC_MQ_OPEN_MAX,
+
+    _SC_MQ_PRIO_MAX,
+
+    _SC_VERSION,
+
+    _SC_PAGESIZE,
+
+
+    _SC_RTSIG_MAX,
+
+    _SC_SEM_NSEMS_MAX,
+
+    _SC_SEM_VALUE_MAX,
+
+    _SC_SIGQUEUE_MAX,
+
+    _SC_TIMER_MAX,
+
+
+
+
+    _SC_BC_BASE_MAX,
+
+    _SC_BC_DIM_MAX,
+
+    _SC_BC_SCALE_MAX,
+
+    _SC_BC_STRING_MAX,
+
+    _SC_COLL_WEIGHTS_MAX,
+
+    _SC_EQUIV_CLASS_MAX,
+
+    _SC_EXPR_NEST_MAX,
+
+    _SC_LINE_MAX,
+
+    _SC_RE_DUP_MAX,
+
+    _SC_CHARCLASS_NAME_MAX,
+
+
+    _SC_2_VERSION,
+
+    _SC_2_C_BIND,
+
+    _SC_2_C_DEV,
+
+    _SC_2_FORT_DEV,
+
+    _SC_2_FORT_RUN,
+
+    _SC_2_SW_DEV,
+
+    _SC_2_LOCALEDEF,
+
+
+    _SC_PII,
+
+    _SC_PII_XTI,
+
+    _SC_PII_SOCKET,
+
+    _SC_PII_INTERNET,
+
+    _SC_PII_OSI,
+
+    _SC_POLL,
+
+    _SC_SELECT,
+
+    _SC_UIO_MAXIOV,
+
+    _SC_IOV_MAX = _SC_UIO_MAXIOV,
+
+    _SC_PII_INTERNET_STREAM,
+
+    _SC_PII_INTERNET_DGRAM,
+
+    _SC_PII_OSI_COTS,
+
+    _SC_PII_OSI_CLTS,
+
+    _SC_PII_OSI_M,
+
+    _SC_T_IOV_MAX,
+
+
+
+    _SC_THREADS,
+
+    _SC_THREAD_SAFE_FUNCTIONS,
+
+    _SC_GETGR_R_SIZE_MAX,
+
+    _SC_GETPW_R_SIZE_MAX,
+
+    _SC_LOGIN_NAME_MAX,
+
+    _SC_TTY_NAME_MAX,
+
+    _SC_THREAD_DESTRUCTOR_ITERATIONS,
+
+    _SC_THREAD_KEYS_MAX,
+
+    _SC_THREAD_STACK_MIN,
+
+    _SC_THREAD_THREADS_MAX,
+
+    _SC_THREAD_ATTR_STACKADDR,
+
+    _SC_THREAD_ATTR_STACKSIZE,
+
+    _SC_THREAD_PRIORITY_SCHEDULING,
+
+    _SC_THREAD_PRIO_INHERIT,
+
+    _SC_THREAD_PRIO_PROTECT,
+
+    _SC_THREAD_PROCESS_SHARED,
+
+
+    _SC_NPROCESSORS_CONF,
+
+    _SC_NPROCESSORS_ONLN,
+
+    _SC_PHYS_PAGES,
+
+    _SC_AVPHYS_PAGES,
+
+    _SC_ATEXIT_MAX,
+
+    _SC_PASS_MAX,
+
+
+    _SC_XOPEN_VERSION,
+
+    _SC_XOPEN_XCU_VERSION,
+
+    _SC_XOPEN_UNIX,
+
+    _SC_XOPEN_CRYPT,
+
+    _SC_XOPEN_ENH_I18N,
+
+    _SC_XOPEN_SHM,
+
+
+    _SC_2_CHAR_TERM,
+
+    _SC_2_C_VERSION,
+
+    _SC_2_UPE,
+
+
+    _SC_XOPEN_XPG2,
+
+    _SC_XOPEN_XPG3,
+
+    _SC_XOPEN_XPG4,
+
+
+    _SC_CHAR_BIT,
+
+    _SC_CHAR_MAX,
+
+    _SC_CHAR_MIN,
+
+    _SC_INT_MAX,
+
+    _SC_INT_MIN,
+
+    _SC_LONG_BIT,
+
+    _SC_WORD_BIT,
+
+    _SC_MB_LEN_MAX,
+
+    _SC_NZERO,
+
+    _SC_SSIZE_MAX,
+
+    _SC_SCHAR_MAX,
+
+    _SC_SCHAR_MIN,
+
+    _SC_SHRT_MAX,
+
+    _SC_SHRT_MIN,
+
+    _SC_UCHAR_MAX,
+
+    _SC_UINT_MAX,
+
+    _SC_ULONG_MAX,
+
+    _SC_USHRT_MAX,
+
+
+    _SC_NL_ARGMAX,
+
+    _SC_NL_LANGMAX,
+
+    _SC_NL_MSGMAX,
+
+    _SC_NL_NMAX,
+
+    _SC_NL_SETMAX,
+
+    _SC_NL_TEXTMAX,
+
+
+    _SC_XBS5_ILP32_OFF32,
+
+    _SC_XBS5_ILP32_OFFBIG,
+
+    _SC_XBS5_LP64_OFF64,
+
+    _SC_XBS5_LPBIG_OFFBIG,
+
+
+    _SC_XOPEN_LEGACY,
+
+    _SC_XOPEN_REALTIME,
+
+    _SC_XOPEN_REALTIME_THREADS,
+
+
+    _SC_ADVISORY_INFO,
+
+    _SC_BARRIERS,
+
+    _SC_BASE,
+
+    _SC_C_LANG_SUPPORT,
+
+    _SC_C_LANG_SUPPORT_R,
+
+    _SC_CLOCK_SELECTION,
+
+    _SC_CPUTIME,
+
+    _SC_THREAD_CPUTIME,
+
+    _SC_DEVICE_IO,
+
+    _SC_DEVICE_SPECIFIC,
+
+    _SC_DEVICE_SPECIFIC_R,
+
+    _SC_FD_MGMT,
+
+    _SC_FIFO,
+
+    _SC_PIPE,
+
+    _SC_FILE_ATTRIBUTES,
+
+    _SC_FILE_LOCKING,
+
+    _SC_FILE_SYSTEM,
+
+    _SC_MONOTONIC_CLOCK,
+
+    _SC_MULTI_PROCESS,
+
+    _SC_SINGLE_PROCESS,
+
+    _SC_NETWORKING,
+
+    _SC_READER_WRITER_LOCKS,
+
+    _SC_SPIN_LOCKS,
+
+    _SC_REGEXP,
+
+    _SC_REGEX_VERSION,
+
+    _SC_SHELL,
+
+    _SC_SIGNALS,
+
+    _SC_SPAWN,
+
+    _SC_SPORADIC_SERVER,
+
+    _SC_THREAD_SPORADIC_SERVER,
+
+    _SC_SYSTEM_DATABASE,
+
+    _SC_SYSTEM_DATABASE_R,
+
+    _SC_TIMEOUTS,
+
+    _SC_TYPED_MEMORY_OBJECTS,
+
+    _SC_USER_GROUPS,
+
+    _SC_USER_GROUPS_R,
+
+    _SC_2_PBS,
+
+    _SC_2_PBS_ACCOUNTING,
+
+    _SC_2_PBS_LOCATE,
+
+    _SC_2_PBS_MESSAGE,
+
+    _SC_2_PBS_TRACK,
+
+    _SC_SYMLOOP_MAX,
+
+    _SC_STREAMS,
+
+    _SC_2_PBS_CHECKPOINT,
+
+
+    _SC_V6_ILP32_OFF32,
+
+    _SC_V6_ILP32_OFFBIG,
+
+    _SC_V6_LP64_OFF64,
+
+    _SC_V6_LPBIG_OFFBIG,
+
+
+    _SC_HOST_NAME_MAX,
+
+    _SC_TRACE,
+
+    _SC_TRACE_EVENT_FILTER,
+
+    _SC_TRACE_INHERIT,
+
+    _SC_TRACE_LOG,
+
+
+    _SC_LEVEL1_ICACHE_SIZE,
+
+    _SC_LEVEL1_ICACHE_ASSOC,
+
+    _SC_LEVEL1_ICACHE_LINESIZE,
+
+    _SC_LEVEL1_DCACHE_SIZE,
+
+    _SC_LEVEL1_DCACHE_ASSOC,
+
+    _SC_LEVEL1_DCACHE_LINESIZE,
+
+    _SC_LEVEL2_CACHE_SIZE,
+
+    _SC_LEVEL2_CACHE_ASSOC,
+
+    _SC_LEVEL2_CACHE_LINESIZE,
+
+    _SC_LEVEL3_CACHE_SIZE,
+
+    _SC_LEVEL3_CACHE_ASSOC,
+
+    _SC_LEVEL3_CACHE_LINESIZE,
+
+    _SC_LEVEL4_CACHE_SIZE,
+
+    _SC_LEVEL4_CACHE_ASSOC,
+
+    _SC_LEVEL4_CACHE_LINESIZE,
+
+
+
+    _SC_IPV6 = _SC_LEVEL1_ICACHE_SIZE + 50,
+
+    _SC_RAW_SOCKETS,
+
+
+    _SC_V7_ILP32_OFF32,
+
+    _SC_V7_ILP32_OFFBIG,
+
+    _SC_V7_LP64_OFF64,
+
+    _SC_V7_LPBIG_OFFBIG,
+
+
+    _SC_SS_REPL_MAX,
+
+
+    _SC_TRACE_EVENT_NAME_MAX,
+
+    _SC_TRACE_NAME_MAX,
+
+    _SC_TRACE_SYS_MAX,
+
+    _SC_TRACE_USER_EVENT_MAX,
+
+
+    _SC_XOPEN_STREAMS,
+
+
+    _SC_THREAD_ROBUST_PRIO_INHERIT,
+
+    _SC_THREAD_ROBUST_PRIO_PROTECT
+
+  };
+
+
+enum
+  {
+    _CS_PATH,
+
+
+    _CS_V6_WIDTH_RESTRICTED_ENVS,
+
+
+
+    _CS_GNU_LIBC_VERSION,
+
+    _CS_GNU_LIBPTHREAD_VERSION,
+
+
+    _CS_V5_WIDTH_RESTRICTED_ENVS,
+
+
+
+    _CS_V7_WIDTH_RESTRICTED_ENVS,
+# 613 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/confname.h" 3 4
+    _CS_POSIX_V6_ILP32_OFF32_CFLAGS,
+
+    _CS_POSIX_V6_ILP32_OFF32_LDFLAGS,
+
+    _CS_POSIX_V6_ILP32_OFF32_LIBS,
+
+    _CS_POSIX_V6_ILP32_OFF32_LINTFLAGS,
+
+    _CS_POSIX_V6_ILP32_OFFBIG_CFLAGS,
+
+    _CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS,
+
+    _CS_POSIX_V6_ILP32_OFFBIG_LIBS,
+
+    _CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS,
+
+    _CS_POSIX_V6_LP64_OFF64_CFLAGS,
+
+    _CS_POSIX_V6_LP64_OFF64_LDFLAGS,
+
+    _CS_POSIX_V6_LP64_OFF64_LIBS,
+
+    _CS_POSIX_V6_LP64_OFF64_LINTFLAGS,
+
+    _CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS,
+
+    _CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS,
+
+    _CS_POSIX_V6_LPBIG_OFFBIG_LIBS,
+
+    _CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS,
+
+
+
+
+    _CS_POSIX_V7_ILP32_OFF32_CFLAGS,
+
+    _CS_POSIX_V7_ILP32_OFF32_LDFLAGS,
+
+    _CS_POSIX_V7_ILP32_OFF32_LIBS,
+
+    _CS_POSIX_V7_ILP32_OFF32_LINTFLAGS,
+
+    _CS_POSIX_V7_ILP32_OFFBIG_CFLAGS,
+
+    _CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS,
+
+    _CS_POSIX_V7_ILP32_OFFBIG_LIBS,
+
+    _CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS,
+
+    _CS_POSIX_V7_LP64_OFF64_CFLAGS,
+
+    _CS_POSIX_V7_LP64_OFF64_LDFLAGS,
+
+    _CS_POSIX_V7_LP64_OFF64_LIBS,
+
+    _CS_POSIX_V7_LP64_OFF64_LINTFLAGS,
+
+    _CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS,
+
+    _CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS,
+
+    _CS_POSIX_V7_LPBIG_OFFBIG_LIBS,
+
+    _CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS
+
+
+  };
+# 562 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 2 3 4
+
+
+extern long int pathconf (__const char *__path, int __name)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern long int fpathconf (int __fd, int __name) __attribute__ ((__nothrow__));
+
+
+extern long int sysconf (int __name) __attribute__ ((__nothrow__));
+
+
+
+extern size_t confstr (int __name, char *__buf, size_t __len) __attribute__ ((__nothrow__));
+
+
+
+
+extern __pid_t getpid (void) __attribute__ ((__nothrow__));
+
+
+extern __pid_t getppid (void) __attribute__ ((__nothrow__));
+
+
+
+
+extern __pid_t getpgrp (void) __attribute__ ((__nothrow__));
+# 598 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern __pid_t __getpgid (__pid_t __pid) __attribute__ ((__nothrow__));
+# 607 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int setpgid (__pid_t __pid, __pid_t __pgid) __attribute__ ((__nothrow__));
+# 624 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int setpgrp (void) __attribute__ ((__nothrow__));
+# 641 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern __pid_t setsid (void) __attribute__ ((__nothrow__));
+
+
+
+
+
+
+
+extern __uid_t getuid (void) __attribute__ ((__nothrow__));
+
+
+extern __uid_t geteuid (void) __attribute__ ((__nothrow__));
+
+
+extern __gid_t getgid (void) __attribute__ ((__nothrow__));
+
+
+extern __gid_t getegid (void) __attribute__ ((__nothrow__));
+
+
+
+
+extern int getgroups (int __size, __gid_t __list[]) __attribute__ ((__nothrow__)) ;
+# 674 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int setuid (__uid_t __uid) __attribute__ ((__nothrow__));
+
+
+
+
+extern int setreuid (__uid_t __ruid, __uid_t __euid) __attribute__ ((__nothrow__));
+
+
+
+
+extern int seteuid (__uid_t __uid) __attribute__ ((__nothrow__));
+
+
+
+
+
+
+extern int setgid (__gid_t __gid) __attribute__ ((__nothrow__));
+
+
+
+
+extern int setregid (__gid_t __rgid, __gid_t __egid) __attribute__ ((__nothrow__));
+
+
+
+
+extern int setegid (__gid_t __gid) __attribute__ ((__nothrow__));
+# 733 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern __pid_t fork (void) __attribute__ ((__nothrow__));
+
+
+
+
+
+
+
+extern __pid_t vfork (void) __attribute__ ((__nothrow__));
+
+
+
+extern void __exit_thread (int val) __attribute__ ((__noreturn__));
+
+
+
+extern char *ttyname (int __fd) __attribute__ ((__nothrow__));
+
+
+
+extern int ttyname_r (int __fd, char *__buf, size_t __buflen)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2))) ;
+
+
+
+extern int isatty (int __fd) __attribute__ ((__nothrow__));
+# 770 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int link (__const char *__from, __const char *__to)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2))) ;
+
+
+
+
+extern int linkat (int __fromfd, __const char *__from, int __tofd,
+     __const char *__to, int __flags)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2, 4))) ;
+
+
+
+
+extern int symlink (__const char *__from, __const char *__to)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2))) ;
+
+
+
+
+extern ssize_t readlink (__const char *__restrict __path,
+    char *__restrict __buf, size_t __len)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2))) ;
+
+
+
+
+extern int symlinkat (__const char *__from, int __tofd,
+        __const char *__to) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 3))) ;
+
+
+extern ssize_t readlinkat (int __fd, __const char *__restrict __path,
+      char *__restrict __buf, size_t __len)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2, 3))) ;
+
+
+
+extern int unlink (__const char *__name) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern int unlinkat (int __fd, __const char *__name, int __flag)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2)));
+
+
+
+extern int rmdir (__const char *__path) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern __pid_t tcgetpgrp (int __fd) __attribute__ ((__nothrow__));
+
+
+extern int tcsetpgrp (int __fd, __pid_t __pgrp_id) __attribute__ ((__nothrow__));
+
+
+
+
+
+
+extern char *getlogin (void);
+
+
+
+
+
+
+
+extern int getlogin_r (char *__name, size_t __name_len) __attribute__ ((__nonnull__ (1)));
+# 852 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/getopt.h" 1 3 4
+# 61 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/getopt.h" 3 4
+extern char *optarg;
+# 75 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/getopt.h" 3 4
+extern int optind;
+
+
+
+
+extern int opterr;
+
+
+
+extern int optopt;
+# 154 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/getopt.h" 3 4
+extern int getopt (int ___argc, char *const *___argv, const char *__shortopts)
+       __attribute__ ((__nothrow__));
+# 853 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 2 3 4
+
+
+
+
+
+
+
+extern int gethostname (char *__name, size_t __len) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+extern int sethostname (__const char *__name, size_t __len)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+extern int sethostid (long int __id) __attribute__ ((__nothrow__)) ;
+
+
+
+
+
+extern int getdomainname (char *__name, size_t __len)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+extern int setdomainname (__const char *__name, size_t __len)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+
+
+
+extern int vhangup (void) __attribute__ ((__nothrow__));
+# 912 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int acct (__const char *__name) __attribute__ ((__nothrow__));
+
+
+
+extern char *getusershell (void) __attribute__ ((__nothrow__));
+extern void endusershell (void) __attribute__ ((__nothrow__));
+extern void setusershell (void) __attribute__ ((__nothrow__));
+
+
+
+
+
+extern int daemon (int __nochdir, int __noclose) __attribute__ ((__nothrow__)) ;
+
+
+
+
+
+
+extern int chroot (__const char *__path) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+
+
+
+extern char *getpass (__const char *__prompt) __attribute__ ((__nonnull__ (1)));
+# 944 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int fsync (int __fd);
+
+
+
+
+
+
+extern long int gethostid (void);
+
+
+extern void sync (void) __attribute__ ((__nothrow__));
+
+
+
+
+extern int getpagesize (void) __attribute__ ((__nothrow__)) __attribute__ ((__const__));
+
+
+
+
+extern int getdtablesize (void) __attribute__ ((__nothrow__));
+
+
+
+
+extern int truncate (__const char *__file, __off_t __length)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1))) ;
+# 991 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int ftruncate (int __fd, __off_t __length) __attribute__ ((__nothrow__)) ;
+# 1011 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int brk (void *__addr) __attribute__ ((__nothrow__)) ;
+
+
+
+
+
+extern void *sbrk (intptr_t __delta) __attribute__ ((__nothrow__));
+# 1032 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern long int syscall (long int __sysno, ...) __attribute__ ((__nothrow__));
+# 1055 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int lockf (int __fd, int __cmd, __off_t __len) ;
+# 1087 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+extern int fdatasync (int __fildes) __attribute__ ((__nothrow__));
+# 1127 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/unistd.h" 3 4
+
+# 30 "taskimpl.h" 2
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 1 3 4
+# 28 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+
+
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h" 1 3 4
+# 34 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 2 3 4
+
+
+
+
+extern void *memcpy (void *__restrict __dest,
+       __const void *__restrict __src, size_t __n)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void *memmove (void *__dest, __const void *__src, size_t __n)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+
+extern void *memccpy (void *__restrict __dest, __const void *__restrict __src,
+        int __c, size_t __n)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+extern void *memset (void *__s, int __c, size_t __n) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern int memcmp (__const void *__s1, __const void *__s2, size_t __n)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void *memchr (__const void *__s, int __c, size_t __n)
+      __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+# 82 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+
+
+extern char *strcpy (char *__restrict __dest, __const char *__restrict __src)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strncpy (char *__restrict __dest,
+        __const char *__restrict __src, size_t __n)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern char *strcat (char *__restrict __dest, __const char *__restrict __src)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strncat (char *__restrict __dest, __const char *__restrict __src,
+        size_t __n) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strcmp (__const char *__s1, __const char *__s2)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern int strncmp (__const char *__s1, __const char *__s2, size_t __n)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strcoll (__const char *__s1, __const char *__s2)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern size_t strxfrm (char *__restrict __dest,
+         __const char *__restrict __src, size_t __n)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2)));
+
+# 130 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+extern char *strdup (__const char *__s)
+     __attribute__ ((__nothrow__)) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
+# 165 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+
+
+extern char *strchr (__const char *__s, int __c)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+extern char *strrchr (__const char *__s, int __c)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+# 181 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+
+
+
+extern size_t strcspn (__const char *__s, __const char *__reject)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern size_t strspn (__const char *__s, __const char *__accept)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strpbrk (__const char *__s, __const char *__accept)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strstr (__const char *__haystack, __const char *__needle)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern char *strtok (char *__restrict __s, __const char *__restrict __delim)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2)));
+
+# 212 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+extern char *strtok_r (char *__restrict __s, __const char *__restrict __delim,
+         char **__restrict __save_ptr)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2, 3)));
+# 244 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+
+
+extern size_t strlen (__const char *__s)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+# 258 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+
+
+extern char *strerror (int __errnum) __attribute__ ((__nothrow__));
+
+# 273 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+extern int __xpg_strerror_r (int __errnum, char *__buf, size_t __buflen)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (2)));
+
+extern int strerror_r (int __errnum, char *__buf, size_t __buflen) __asm__ ("" "__xpg_strerror_r") __attribute__ ((__nothrow__))
+
+                        __attribute__ ((__nonnull__ (2)));
+# 306 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+extern void bcopy (__const void *__src, void *__dest, size_t __n)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void bzero (void *__s, size_t __n) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern int bcmp (__const void *__s1, __const void *__s2, size_t __n)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern char *index (__const char *__s, int __c)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern char *rindex (__const char *__s, int __c)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 339 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+extern int ffs (int __i) __attribute__ ((__nothrow__)) __attribute__ ((__const__));
+# 352 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+extern int strcasecmp (__const char *__s1, __const char *__s2)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strncasecmp (__const char *__s1, __const char *__s2, size_t __n)
+     __attribute__ ((__nothrow__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 375 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+extern char *strsep (char **__restrict __stringp,
+       __const char *__restrict __delim)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+# 427 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/string.h" 3 4
+extern size_t strlcat(char *__restrict dst, const char *__restrict src,
+                      size_t n) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+extern size_t strlcpy(char *__restrict dst, const char *__restrict src,
+                      size_t n) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+# 31 "taskimpl.h" 2
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/assert.h" 1 3 4
+# 51 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/assert.h" 3 4
+
+
+
+extern void __assert(const char *, const char *, unsigned int, const char *)
+ __attribute__ ((__nothrow__)) __attribute__ ((__noreturn__));
+
+
+# 32 "taskimpl.h" 2
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 1 3 4
+# 31 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+
+
+
+
+
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stddef.h" 1 3 4
+# 40 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 2 3 4
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h" 1 3 4
+# 38 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_clk_tck.h" 1 3 4
+# 39 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h" 2 3 4
+# 44 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 2 3 4
+# 59 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+
+
+typedef __clock_t clock_t;
+
+
+
+# 132 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+
+
+struct tm
+{
+  int tm_sec;
+  int tm_min;
+  int tm_hour;
+  int tm_mday;
+  int tm_mon;
+  int tm_year;
+  int tm_wday;
+  int tm_yday;
+  int tm_isdst;
+
+
+
+  long int tm_gmtoff;
+  __const char *tm_zone;
+
+
+
+
+
+};
+
+
+
+
+
+
+
+
+struct itimerspec
+  {
+    struct timespec it_interval;
+    struct timespec it_value;
+  };
+
+
+struct sigevent;
+# 183 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+
+
+
+extern clock_t clock (void) __attribute__ ((__nothrow__));
+
+
+extern time_t time (time_t *__timer) __attribute__ ((__nothrow__));
+
+
+
+extern double difftime (time_t __time1, time_t __time0)
+     __attribute__ ((__nothrow__)) __attribute__ ((__const__));
+
+
+
+
+
+extern time_t mktime (struct tm *__tp) __attribute__ ((__nothrow__));
+
+
+
+
+
+extern size_t strftime (char *__restrict __s, size_t __maxsize,
+   __const char *__restrict __format,
+   __const struct tm *__restrict __tp) __attribute__ ((__nothrow__));
+
+# 237 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+
+
+
+extern struct tm *gmtime (__const time_t *__timer) __attribute__ ((__nothrow__));
+
+
+
+extern struct tm *localtime (__const time_t *__timer) __attribute__ ((__nothrow__));
+
+
+
+
+
+extern struct tm *gmtime_r (__const time_t *__restrict __timer,
+       struct tm *__restrict __tp) __attribute__ ((__nothrow__));
+
+
+
+extern struct tm *localtime_r (__const time_t *__restrict __timer,
+          struct tm *__restrict __tp) __attribute__ ((__nothrow__));
+
+
+
+
+
+extern char *asctime (__const struct tm *__tp) __attribute__ ((__nothrow__));
+
+
+extern char *ctime (__const time_t *__timer) __attribute__ ((__nothrow__));
+
+
+
+
+
+
+
+extern char *asctime_r (__const struct tm *__restrict __tp,
+   char *__restrict __buf) __attribute__ ((__nothrow__));
+
+
+extern char *ctime_r (__const time_t *__restrict __timer,
+        char *__restrict __buf) __attribute__ ((__nothrow__));
+# 293 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+extern char *tzname[2];
+
+
+
+extern void tzset (void) __attribute__ ((__nothrow__));
+
+
+
+extern int daylight;
+extern long int timezone;
+
+
+
+
+
+extern int stime (__const time_t *__when) __attribute__ ((__nothrow__));
+# 323 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+extern time_t timegm (struct tm *__tp) __attribute__ ((__nothrow__));
+
+
+extern time_t timelocal (struct tm *__tp) __attribute__ ((__nothrow__));
+
+
+extern int dysize (int __year) __attribute__ ((__nothrow__)) __attribute__ ((__const__));
+# 339 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+extern int nanosleep (__const struct timespec *__requested_time,
+        struct timespec *__remaining);
+
+
+
+extern int clock_getres (clockid_t __clock_id, struct timespec *__res) __attribute__ ((__nothrow__));
+
+
+extern int clock_gettime (clockid_t __clock_id, struct timespec *__tp) __attribute__ ((__nothrow__));
+
+
+extern int clock_settime (clockid_t __clock_id, __const struct timespec *__tp)
+     __attribute__ ((__nothrow__));
+# 370 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+extern int timer_create (clockid_t __clock_id,
+    struct sigevent *__restrict __evp,
+    timer_t *__restrict __timerid) __attribute__ ((__nothrow__));
+
+
+extern int timer_delete (timer_t __timerid) __attribute__ ((__nothrow__));
+
+
+extern int timer_settime (timer_t __timerid, int __flags,
+     __const struct itimerspec *__restrict __value,
+     struct itimerspec *__restrict __ovalue) __attribute__ ((__nothrow__));
+
+
+extern int timer_gettime (timer_t __timerid, struct itimerspec *__value)
+     __attribute__ ((__nothrow__));
+
+
+extern int timer_getoverrun (timer_t __timerid) __attribute__ ((__nothrow__));
+# 434 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/time.h" 3 4
+
+# 33 "taskimpl.h" 2
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h" 1 3 4
+# 29 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h" 1 3 4
+# 30 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h" 2 3 4
+# 39 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h" 3 4
+
+# 57 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h" 3 4
+struct timezone
+  {
+    int tz_minuteswest;
+    int tz_dsttime;
+  };
+
+typedef struct timezone *__restrict __timezone_ptr_t;
+# 73 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h" 3 4
+extern int gettimeofday (struct timeval *__restrict __tv,
+    __timezone_ptr_t __tz) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern int settimeofday (__const struct timeval *__tv,
+    __const struct timezone *__tz)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+# 90 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h" 3 4
+extern int adjtime (__const struct timeval *__delta,
+      struct timeval *__olddelta) __attribute__ ((__nothrow__));
+
+
+
+
+enum __itimer_which
+  {
+
+    ITIMER_REAL = 0,
+
+
+    ITIMER_VIRTUAL = 1,
+
+
+
+    ITIMER_PROF = 2
+
+  };
+
+
+
+struct itimerval
+  {
+
+    struct timeval it_interval;
+
+    struct timeval it_value;
+  };
+
+
+
+
+
+
+typedef int __itimer_which_t;
+
+
+
+
+extern int getitimer (__itimer_which_t __which,
+        struct itimerval *__value) __attribute__ ((__nothrow__));
+
+
+
+
+extern int setitimer (__itimer_which_t __which,
+        __const struct itimerval *__restrict __new,
+        struct itimerval *__restrict __old) __attribute__ ((__nothrow__));
+
+
+
+
+extern int utimes (__const char *__file, __const struct timeval __tvp[2])
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern int lutimes (__const char *__file, __const struct timeval __tvp[2])
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+# 196 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h" 3 4
+
+# 34 "taskimpl.h" 2
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 1 3 4
+# 29 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 3 4
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 1 3 4
+# 31 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h" 1 3 4
+# 156 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h" 3 4
+extern int __sigismember (__const __sigset_t *, int);
+extern int __sigaddset (__sigset_t *, int);
+extern int __sigdelset (__sigset_t *, int);
+# 34 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 2 3 4
+
+
+
+
+
+
+
+typedef __sig_atomic_t sig_atomic_t;
+
+# 58 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/signum.h" 1 3 4
+# 59 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 2 3 4
+# 98 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+typedef void (*__sighandler_t) (int);
+# 114 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+
+
+extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+     __attribute__ ((__nothrow__));
+# 128 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+
+# 141 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+extern int kill (__pid_t __pid, int __sig) __attribute__ ((__nothrow__));
+
+
+
+
+
+
+extern int killpg (__pid_t __pgrp, int __sig) __attribute__ ((__nothrow__));
+
+
+
+
+extern int raise (int __sig) __attribute__ ((__nothrow__));
+
+
+
+
+extern __sighandler_t ssignal (int __sig, __sighandler_t __handler)
+     __attribute__ ((__nothrow__));
+extern int gsignal (int __sig) __attribute__ ((__nothrow__));
+
+
+
+
+extern void psignal (int __sig, __const char *__s);
+# 177 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+extern int __sigpause (int __sig_or_mask, int __is_sig);
+# 202 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+extern int sigblock (int __mask) __attribute__ ((__nothrow__));
+
+
+
+extern int sigsetmask (int __mask) __attribute__ ((__nothrow__));
+
+
+
+extern int siggetmask (void) __attribute__ ((__nothrow__)) __attribute__ ((__deprecated__));
+# 220 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+typedef __sighandler_t sig_t;
+# 231 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h" 1 3 4
+# 25 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/wordsize.h" 1 3 4
+# 26 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h" 2 3 4
+
+
+
+
+
+
+
+typedef union sigval
+  {
+    int sival_int;
+    void *sival_ptr;
+  } sigval_t;
+# 51 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h" 3 4
+typedef struct siginfo
+  {
+    int si_signo;
+    int si_errno;
+
+    int si_code;
+
+    union
+      {
+ int _pad[((128 / sizeof (int)) - 3)];
+
+
+ struct
+   {
+     __pid_t si_pid;
+     __uid_t si_uid;
+   } _kill;
+
+
+ struct
+   {
+     int si_tid;
+     int si_overrun;
+     sigval_t si_sigval;
+   } _timer;
+
+
+ struct
+   {
+     __pid_t si_pid;
+     __uid_t si_uid;
+     sigval_t si_sigval;
+   } _rt;
+
+
+ struct
+   {
+     __pid_t si_pid;
+     __uid_t si_uid;
+     int si_status;
+     __clock_t si_utime;
+     __clock_t si_stime;
+   } _sigchld;
+
+
+ struct
+   {
+     void *si_addr;
+   } _sigfault;
+
+
+ struct
+   {
+     long int si_band;
+     int si_fd;
+   } _sigpoll;
+      } _sifields;
+  } siginfo_t;
+# 129 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h" 3 4
+enum
+{
+  SI_ASYNCNL = -60,
+
+  SI_TKILL = -6,
+
+  SI_SIGIO,
+
+  SI_ASYNCIO,
+
+  SI_MESGQ,
+
+  SI_TIMER,
+
+  SI_QUEUE,
+
+  SI_USER,
+
+  SI_KERNEL = 0x80
+
+};
+
+
+
+enum
+{
+  ILL_ILLOPC = 1,
+
+  ILL_ILLOPN,
+
+  ILL_ILLADR,
+
+  ILL_ILLTRP,
+
+  ILL_PRVOPC,
+
+  ILL_PRVREG,
+
+  ILL_COPROC,
+
+  ILL_BADSTK
+
+};
+
+
+enum
+{
+  FPE_INTDIV = 1,
+
+  FPE_INTOVF,
+
+  FPE_FLTDIV,
+
+  FPE_FLTOVF,
+
+  FPE_FLTUND,
+
+  FPE_FLTRES,
+
+  FPE_FLTINV,
+
+  FPE_FLTSUB
+
+};
+
+
+enum
+{
+  SEGV_MAPERR = 1,
+
+  SEGV_ACCERR
+
+};
+
+
+enum
+{
+  BUS_ADRALN = 1,
+
+  BUS_ADRERR,
+
+  BUS_OBJERR
+
+};
+
+
+enum
+{
+  TRAP_BRKPT = 1,
+
+  TRAP_TRACE
+
+};
+
+
+enum
+{
+  CLD_EXITED = 1,
+
+  CLD_KILLED,
+
+  CLD_DUMPED,
+
+  CLD_TRAPPED,
+
+  CLD_STOPPED,
+
+  CLD_CONTINUED
+
+};
+
+
+enum
+{
+  POLL_IN = 1,
+
+  POLL_OUT,
+
+  POLL_MSG,
+
+  POLL_ERR,
+
+  POLL_PRI,
+
+  POLL_HUP
+
+};
+# 273 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h" 3 4
+typedef struct sigevent
+  {
+    sigval_t sigev_value;
+    int sigev_signo;
+    int sigev_notify;
+
+    union
+      {
+ int _pad[((64 / sizeof (int)) - 3)];
+
+
+
+ __pid_t _tid;
+
+ struct
+   {
+     void (*_function) (sigval_t);
+     void *_attribute;
+   } _sigev_thread;
+      } _sigev_un;
+  } sigevent_t;
+
+
+
+
+
+
+enum
+{
+  SIGEV_SIGNAL = 0,
+
+  SIGEV_NONE,
+
+  SIGEV_THREAD,
+
+
+  SIGEV_THREAD_ID = 4
+
+};
+# 232 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 2 3 4
+
+
+
+extern int sigemptyset (sigset_t *__set) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern int sigfillset (sigset_t *__set) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern int sigaddset (sigset_t *__set, int __signo) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern int sigdelset (sigset_t *__set, int __signo) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern int sigismember (__const sigset_t *__set, int __signo)
+     __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+# 265 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigaction.h" 1 3 4
+# 29 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigaction.h" 3 4
+struct sigaction {
+
+ union {
+  __sighandler_t sa_handler;
+  void (*sa_sigaction)(int, siginfo_t *, void *);
+ } __sigaction_handler;
+
+
+
+
+
+ unsigned long sa_flags;
+ void (*sa_restorer)(void);
+ sigset_t sa_mask;
+};
+# 266 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 2 3 4
+
+
+extern int sigprocmask (int __how, __const sigset_t *__restrict __set,
+   sigset_t *__restrict __oset) __attribute__ ((__nothrow__));
+
+
+
+
+
+
+extern int sigsuspend (__const sigset_t *__set) __attribute__ ((__nonnull__ (1)));
+
+
+extern int sigaction (int __sig, __const struct sigaction *__restrict __act,
+        struct sigaction *__restrict __oact) __attribute__ ((__nothrow__));
+
+
+extern int sigpending (sigset_t *__set) __attribute__ ((__nothrow__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+extern int sigwait (__const sigset_t *__restrict __set, int *__restrict __sig)
+     __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+
+extern int sigwaitinfo (__const sigset_t *__restrict __set,
+   siginfo_t *__restrict __info) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+extern int sigtimedwait (__const sigset_t *__restrict __set,
+    siginfo_t *__restrict __info,
+    __const struct timespec *__restrict __timeout)
+     __attribute__ ((__nonnull__ (1)));
+
+
+
+extern int sigqueue (__pid_t __pid, int __sig, __const union sigval __val)
+     __attribute__ ((__nothrow__));
+# 329 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+struct sigvec
+  {
+    __sighandler_t sv_handler;
+    int sv_mask;
+
+    int sv_flags;
+
+  };
+# 349 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+extern int sigvec (int __sig, __const struct sigvec *__vec,
+     struct sigvec *__ovec) __attribute__ ((__nothrow__));
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigcontext.h" 1 3 4
+# 31 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigcontext.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm/sigcontext.h" 1 3 4
+# 9 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/asm/sigcontext.h" 3 4
+struct sigcontext {
+ unsigned long trap_no;
+ unsigned long error_code;
+ unsigned long oldmask;
+ unsigned long arm_r0;
+ unsigned long arm_r1;
+ unsigned long arm_r2;
+ unsigned long arm_r3;
+ unsigned long arm_r4;
+ unsigned long arm_r5;
+ unsigned long arm_r6;
+ unsigned long arm_r7;
+ unsigned long arm_r8;
+ unsigned long arm_r9;
+ unsigned long arm_r10;
+ unsigned long arm_fp;
+ unsigned long arm_ip;
+ unsigned long arm_sp;
+ unsigned long arm_lr;
+ unsigned long arm_pc;
+ unsigned long arm_cpsr;
+ unsigned long fault_address;
+};
+# 32 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigcontext.h" 2 3 4
+# 355 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 2 3 4
+
+
+extern int sigreturn (struct sigcontext *__scp) __attribute__ ((__nothrow__));
+# 368 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+extern int siginterrupt (int __sig, int __interrupt) __attribute__ ((__nothrow__));
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigstack.h" 1 3 4
+# 27 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigstack.h" 3 4
+struct sigstack
+  {
+    void *ss_sp;
+    int ss_onstack;
+  };
+
+
+
+
+enum
+{
+  SS_ONSTACK = 1,
+
+  SS_DISABLE
+
+};
+# 52 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigstack.h" 3 4
+typedef struct sigaltstack
+  {
+    void *ss_sp;
+    int ss_flags;
+    size_t ss_size;
+  } stack_t;
+# 372 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 2 3 4
+# 388 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+extern int sigaltstack (__const struct sigaltstack *__restrict __ss,
+   struct sigaltstack *__restrict __oss) __attribute__ ((__nothrow__));
+# 412 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h" 1 3 4
+# 413 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 2 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigthread.h" 1 3 4
+# 31 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigthread.h" 3 4
+extern int pthread_sigmask (int __how,
+       __const __sigset_t *__restrict __newmask,
+       __sigset_t *__restrict __oldmask)__attribute__ ((__nothrow__));
+
+
+extern int pthread_kill (pthread_t __threadid, int __signo) __attribute__ ((__nothrow__));
+# 414 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/signal.h" 2 3 4
+
+
+
+
+
+
+extern int __libc_current_sigrtmin (void) __attribute__ ((__nothrow__));
+
+extern int __libc_current_sigrtmax (void) __attribute__ ((__nothrow__));
+
+
+
+
+# 32 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 2 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/resource.h" 1 3 4
+# 25 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/resource.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/resource.h" 1 3 4
+# 33 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/resource.h" 3 4
+enum __rlimit_resource
+{
+
+  RLIMIT_CPU = 0,
+
+
+
+  RLIMIT_FSIZE = 1,
+
+
+
+  RLIMIT_DATA = 2,
+
+
+
+  RLIMIT_STACK = 3,
+
+
+
+  RLIMIT_CORE = 4,
+
+
+
+
+
+
+  __RLIMIT_RSS = 5,
+
+
+
+  RLIMIT_NOFILE = 7,
+  __RLIMIT_OFILE = RLIMIT_NOFILE,
+
+
+
+
+  RLIMIT_AS = 9,
+
+
+
+  __RLIMIT_NPROC = 6,
+
+
+
+  __RLIMIT_MEMLOCK = 8,
+
+
+
+  __RLIMIT_LOCKS = 10,
+
+
+
+  __RLIMIT_SIGPENDING = 11,
+
+
+
+  __RLIMIT_MSGQUEUE = 12,
+
+
+
+
+
+  __RLIMIT_NICE = 13,
+
+
+
+
+  __RLIMIT_RTPRIO = 14,
+
+
+  __RLIMIT_NLIMITS = 15,
+  __RLIM_NLIMITS = __RLIMIT_NLIMITS
+
+
+};
+# 127 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/resource.h" 3 4
+typedef __rlim_t rlim_t;
+
+
+
+
+
+
+
+struct rlimit
+  {
+
+    rlim_t rlim_cur;
+
+    rlim_t rlim_max;
+  };
+# 154 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/resource.h" 3 4
+enum __rusage_who
+{
+
+  RUSAGE_SELF = 0,
+
+
+
+  RUSAGE_CHILDREN = -1
+
+};
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h" 1 3 4
+# 167 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/resource.h" 2 3 4
+
+
+struct rusage
+  {
+
+    struct timeval ru_utime;
+
+    struct timeval ru_stime;
+
+    long int ru_maxrss;
+
+
+    long int ru_ixrss;
+
+    long int ru_idrss;
+
+    long int ru_isrss;
+
+
+    long int ru_minflt;
+
+    long int ru_majflt;
+
+    long int ru_nswap;
+
+
+    long int ru_inblock;
+
+    long int ru_oublock;
+
+    long int ru_msgsnd;
+
+    long int ru_msgrcv;
+
+    long int ru_nsignals;
+
+
+
+    long int ru_nvcsw;
+
+
+    long int ru_nivcsw;
+  };
+
+
+
+
+
+
+
+enum __priority_which
+{
+  PRIO_PROCESS = 0,
+
+  PRIO_PGRP = 1,
+
+  PRIO_USER = 2
+
+};
+# 26 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/resource.h" 2 3 4
+
+
+
+
+
+
+
+# 43 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/resource.h" 3 4
+typedef int __rlimit_resource_t;
+typedef int __rusage_who_t;
+typedef int __priority_which_t;
+
+
+
+
+
+extern int getrlimit (__rlimit_resource_t __resource,
+        struct rlimit *__rlimits) __attribute__ ((__nothrow__));
+# 70 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/resource.h" 3 4
+extern int setrlimit (__rlimit_resource_t __resource,
+        __const struct rlimit *__rlimits) __attribute__ ((__nothrow__));
+# 88 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/resource.h" 3 4
+extern int getrusage (__rusage_who_t __who, struct rusage *__usage) __attribute__ ((__nothrow__));
+
+
+
+
+
+extern int getpriority (__priority_which_t __which, id_t __who) __attribute__ ((__nothrow__));
+
+
+
+extern int setpriority (__priority_which_t __which, id_t __who, int __prio)
+     __attribute__ ((__nothrow__));
+
+
+# 33 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 2 3 4
+
+
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/waitflags.h" 1 3 4
+# 39 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 2 3 4
+# 63 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 3 4
+typedef union
+  {
+    union wait *__uptr;
+    int *__iptr;
+  } __WAIT_STATUS __attribute__ ((__transparent_union__));
+# 80 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/waitstatus.h" 1 3 4
+# 67 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/waitstatus.h" 3 4
+union wait
+  {
+    int w_status;
+    struct
+      {
+
+ unsigned int __w_termsig:7;
+ unsigned int __w_coredump:1;
+ unsigned int __w_retcode:8;
+ unsigned int:16;
+
+
+
+
+
+
+
+      } __wait_terminated;
+    struct
+      {
+
+ unsigned int __w_stopval:8;
+ unsigned int __w_stopsig:8;
+ unsigned int:16;
+
+
+
+
+
+
+      } __wait_stopped;
+  };
+# 81 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 2 3 4
+# 102 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 3 4
+typedef enum
+{
+  P_ALL,
+  P_PID,
+  P_PGID
+} idtype_t;
+# 116 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 3 4
+extern __pid_t wait (__WAIT_STATUS __stat_loc);
+# 139 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 3 4
+extern __pid_t waitpid (__pid_t __pid, int *__stat_loc, int __options);
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h" 1 3 4
+# 25 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/wordsize.h" 1 3 4
+# 26 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/siginfo.h" 2 3 4
+# 144 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 2 3 4
+# 155 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/wait.h" 3 4
+extern int waitid (idtype_t __idtype, __id_t __id, siginfo_t *__infop,
+     int __options);
+
+
+
+
+
+struct rusage;
+
+
+
+
+
+
+extern __pid_t wait3 (__WAIT_STATUS __stat_loc, int __options,
+        struct rusage * __usage) __attribute__ ((__nothrow__));
+
+
+
+
+extern __pid_t wait4 (__pid_t __pid, __WAIT_STATUS __stat_loc, int __options,
+        struct rusage *__usage) __attribute__ ((__nothrow__));
+
+
+
+
+# 36 "taskimpl.h" 2
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sched.h" 1 3 4
+# 32 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sched.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sched.h" 1 3 4
+# 71 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sched.h" 3 4
+struct sched_param
+  {
+    int __sched_priority;
+  };
+
+
+
+
+
+extern int clone (int (*__fn) (void *__arg), void *__child_stack,
+    int __flags, void *__arg, ...) __attribute__ ((__nothrow__));
+
+
+extern int unshare (int __flags) __attribute__ ((__nothrow__));
+
+
+
+# 110 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sched.h" 3 4
+typedef unsigned long int __cpu_mask;
+
+
+
+
+
+
+typedef struct
+{
+  __cpu_mask __bits[1024 / (8 * sizeof (__cpu_mask))];
+} cpu_set_t;
+# 33 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sched.h" 2 3 4
+
+
+
+
+
+
+
+extern int sched_setparam (__pid_t __pid, __const struct sched_param *__param)
+     __attribute__ ((__nothrow__));
+
+
+extern int sched_getparam (__pid_t __pid, struct sched_param *__param) __attribute__ ((__nothrow__));
+
+
+extern int sched_setscheduler (__pid_t __pid, int __policy,
+          __const struct sched_param *__param) __attribute__ ((__nothrow__));
+
+
+extern int sched_getscheduler (__pid_t __pid) __attribute__ ((__nothrow__));
+
+
+extern int sched_yield (void) __attribute__ ((__nothrow__));
+
+
+extern int sched_get_priority_max (int __algorithm) __attribute__ ((__nothrow__));
+
+
+extern int sched_get_priority_min (int __algorithm) __attribute__ ((__nothrow__));
+
+
+extern int sched_rr_get_interval (__pid_t __pid, struct timespec *__t) __attribute__ ((__nothrow__));
+# 90 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sched.h" 3 4
+
+# 37 "taskimpl.h" 2
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/ucontext.h" 1 3 4
+# 25 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/ucontext.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/ucontext.h" 1 3 4
+# 26 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/ucontext.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/procfs.h" 1 3 4
+# 34 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/procfs.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/user.h" 1 3 4
+# 26 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/user.h" 3 4
+struct user_fpregs
+{
+  struct fp_reg
+  {
+    unsigned int sign1:1;
+    unsigned int unused:15;
+    unsigned int sign2:1;
+    unsigned int exponent:14;
+    unsigned int j:1;
+    unsigned int mantissa1:31;
+    unsigned int mantissa0:32;
+  } fpregs[8];
+  unsigned int fpsr:32;
+  unsigned int fpcr:32;
+  unsigned char ftype[8];
+  unsigned int init_flag;
+};
+
+struct user_regs
+{
+  unsigned long int uregs[18];
+};
+
+struct user
+{
+  struct user_regs regs;
+  int u_fpvalid;
+
+  unsigned long int u_tsize;
+  unsigned long int u_dsize;
+  unsigned long int u_ssize;
+
+  unsigned long start_code;
+  unsigned long start_stack;
+
+  long int signal;
+  int reserved;
+  struct user_regs *u_ar0;
+
+  unsigned long magic;
+  char u_comm[32];
+  int u_debugreg[8];
+  struct user_fpregs u_fp;
+  struct user_fpregs *u_fp0;
+};
+# 35 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/procfs.h" 2 3 4
+
+
+
+
+typedef unsigned long elf_greg_t;
+
+
+
+
+
+
+typedef elf_greg_t elf_gregset_t[(sizeof (struct user_regs) / sizeof(elf_greg_t))];
+
+
+typedef struct user_fpregs elf_fpregset_t;
+
+
+struct elf_siginfo
+  {
+    int si_signo;
+    int si_code;
+    int si_errno;
+  };
+# 66 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/procfs.h" 3 4
+struct elf_prstatus
+  {
+    struct elf_siginfo pr_info;
+    short int pr_cursig;
+    unsigned long int pr_sigpend;
+    unsigned long int pr_sighold;
+    __pid_t pr_pid;
+    __pid_t pr_ppid;
+    __pid_t pr_pgrp;
+    __pid_t pr_sid;
+    struct timeval pr_utime;
+    struct timeval pr_stime;
+    struct timeval pr_cutime;
+    struct timeval pr_cstime;
+    elf_gregset_t pr_reg;
+    int pr_fpvalid;
+  };
+
+
+
+
+struct elf_prpsinfo
+  {
+    char pr_state;
+    char pr_sname;
+    char pr_zomb;
+    char pr_nice;
+    unsigned long int pr_flag;
+    unsigned short int pr_uid;
+    unsigned short int pr_gid;
+    int pr_pid, pr_ppid, pr_pgrp, pr_sid;
+
+    char pr_fname[16];
+    char pr_psargs[(80)];
+  };
+
+
+
+
+
+
+typedef void *psaddr_t;
+
+
+typedef elf_gregset_t prgregset_t;
+typedef elf_fpregset_t prfpregset_t;
+
+
+
+typedef __pid_t lwpid_t;
+
+
+typedef struct elf_prstatus prstatus_t;
+typedef struct elf_prpsinfo prpsinfo_t;
+
+
+# 27 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/ucontext.h" 2 3 4
+
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/sigcontext.h" 1 3 4
+# 31 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/ucontext.h" 2 3 4
+
+typedef int greg_t;
+
+
+
+
+
+typedef elf_gregset_t gregset_t;
+
+
+enum
+{
+  R0 = 0,
+
+  R1 = 1,
+
+  R2 = 2,
+
+  R3 = 3,
+
+  R4 = 4,
+
+  R5 = 5,
+
+  R6 = 6,
+
+  R7 = 7,
+
+  R8 = 8,
+
+  R9 = 9,
+
+  R10 = 10,
+
+  R11 = 11,
+
+  R12 = 12,
+
+  R13 = 13,
+
+  R14 = 14,
+
+  R15 = 15
+
+};
+
+
+typedef elf_fpregset_t fpregset_t;
+
+
+
+
+
+typedef struct sigcontext mcontext_t;
+
+
+typedef struct ucontext
+  {
+    unsigned long uc_flags;
+    struct ucontext *uc_link;
+    stack_t uc_stack;
+    mcontext_t uc_mcontext;
+    __sigset_t uc_sigmask;
+    unsigned long uc_regspace[128] __attribute__((__aligned__(8)));
+  } ucontext_t;
+# 26 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/ucontext.h" 2 3 4
+# 40 "taskimpl.h" 2
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/utsname.h" 1 3 4
+# 28 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/utsname.h" 3 4
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/utsname.h" 1 3 4
+# 31 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/utsname.h" 2 3 4
+# 49 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/utsname.h" 3 4
+struct utsname
+  {
+
+    char sysname[65];
+
+
+    char nodename[65];
+
+
+    char release[65];
+
+    char version[65];
+
+
+    char machine[65];
+
+
+
+
+
+
+    char __domainname[65];
+
+
+  };
+# 82 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/sys/utsname.h" 3 4
+extern int uname (struct utsname *__name) __attribute__ ((__nothrow__));
+
+
+
+# 42 "taskimpl.h" 2
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/inttypes.h" 1 3 4
+# 28 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/inttypes.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stdint.h" 1 3 4
+
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdint.h" 1 3 4
+# 28 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdint.h" 3 4
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/wchar.h" 1 3 4
+# 29 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdint.h" 2 3 4
+
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/bits/wordsize.h" 1 3 4
+# 31 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdint.h" 2 3 4
+# 51 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdint.h" 3 4
+typedef unsigned char uint8_t;
+typedef unsigned short int uint16_t;
+
+typedef unsigned int uint32_t;
+
+
+
+
+
+__extension__
+typedef unsigned long long int uint64_t;
+
+
+
+
+
+
+typedef signed char int_least8_t;
+typedef short int int_least16_t;
+typedef int int_least32_t;
+
+
+
+__extension__
+typedef long long int int_least64_t;
+
+
+
+typedef unsigned char uint_least8_t;
+typedef unsigned short int uint_least16_t;
+typedef unsigned int uint_least32_t;
+
+
+
+__extension__
+typedef unsigned long long int uint_least64_t;
+
+
+
+
+
+
+typedef signed char int_fast8_t;
+
+
+
+
+
+typedef int int_fast16_t;
+typedef int int_fast32_t;
+__extension__
+typedef long long int int_fast64_t;
+
+
+
+typedef unsigned char uint_fast8_t;
+
+
+
+
+
+typedef unsigned int uint_fast16_t;
+typedef unsigned int uint_fast32_t;
+__extension__
+typedef unsigned long long int uint_fast64_t;
+# 131 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdint.h" 3 4
+typedef unsigned int uintptr_t;
+# 140 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/stdint.h" 3 4
+__extension__
+typedef long long int intmax_t;
+__extension__
+typedef unsigned long long int uintmax_t;
+# 4 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stdint.h" 2 3 4
+# 29 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/inttypes.h" 2 3 4
+
+
+
+
+
+
+
+typedef unsigned int __gwchar_t;
+# 276 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/inttypes.h" 3 4
+
+# 290 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/inttypes.h" 3 4
+typedef struct
+  {
+    long long int quot;
+    long long int rem;
+  } imaxdiv_t;
+
+
+
+
+
+extern intmax_t imaxabs (intmax_t __n) __attribute__ ((__nothrow__)) __attribute__ ((__const__));
+
+
+extern imaxdiv_t imaxdiv (intmax_t __numer, intmax_t __denom)
+      __attribute__ ((__nothrow__)) __attribute__ ((__const__));
+
+
+extern intmax_t strtoimax (__const char *__restrict __nptr,
+      char **__restrict __endptr, int __base) __attribute__ ((__nothrow__));
+
+
+extern uintmax_t strtoumax (__const char *__restrict __nptr,
+       char ** __restrict __endptr, int __base) __attribute__ ((__nothrow__));
+
+
+
+extern intmax_t wcstoimax (__const __gwchar_t *__restrict __nptr,
+      __gwchar_t **__restrict __endptr, int __base)
+     __attribute__ ((__nothrow__));
+
+
+extern uintmax_t wcstoumax (__const __gwchar_t *__restrict __nptr,
+       __gwchar_t ** __restrict __endptr, int __base)
+     __attribute__ ((__nothrow__));
+# 446 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../arm-brcm-linux-uclibcgnueabi/sysroot/usr/include/inttypes.h" 3 4
+
+# 43 "taskimpl.h" 2
+# 1 "task.h" 1
+# 10 "task.h"
+# 1 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stdarg.h" 1 3 4
+# 40 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 102 "/projects/asuswrt-merlin-68-378-56/release/src-rt-6.x.4708/toolchains/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/../lib/gcc/arm-brcm-linux-uclibcgnueabi/4.5.3/include/stdarg.h" 3 4
+typedef __gnuc_va_list va_list;
+# 11 "task.h" 2
+
+
+
+
+
+
+typedef struct Task Task;
+typedef struct Tasklist Tasklist;
+
+int anyready(void);
+int taskcreate(void (*f)(void *arg), void *arg, unsigned int stacksize);
+void taskexit(int);
+void taskexitall(int);
+void taskmain(int argc, char *argv[]);
+int taskyield(void);
+void** taskdata(void);
+void needstack(int);
+void taskname(char*, ...);
+void taskstate(char*, ...);
+char* taskgetname(void);
+char* taskgetstate(void);
+void tasksystem(void);
+unsigned int taskdelay(unsigned int);
+unsigned int taskid(void);
+
+struct Tasklist
+{
+ Task *head;
+ Task *tail;
+};
+
+
+
+
+typedef struct QLock QLock;
+struct QLock
+{
+ Task *owner;
+ Tasklist waiting;
+};
+
+void qlock(QLock*);
+int canqlock(QLock*);
+void qunlock(QLock*);
+
+
+
+
+typedef struct RWLock RWLock;
+struct RWLock
+{
+ int readers;
+ Task *writer;
+ Tasklist rwaiting;
+ Tasklist wwaiting;
+};
+
+void rlock(RWLock*);
+int canrlock(RWLock*);
+void runlock(RWLock*);
+
+void wlock(RWLock*);
+int canwlock(RWLock*);
+void wunlock(RWLock*);
+
+
+
+
+typedef struct Rendez Rendez;
+
+struct Rendez
+{
+ QLock *l;
+ Tasklist waiting;
+};
+
+void tasksleep(Rendez*);
+int taskwakeup(Rendez*);
+int taskwakeupall(Rendez*);
+
+
+
+
+typedef struct Alt Alt;
+typedef struct Altarray Altarray;
+typedef struct Channel Channel;
+
+enum
+{
+ CHANEND,
+ CHANSND,
+ CHANRCV,
+ CHANNOP,
+ CHANNOBLK,
+};
+
+struct Alt
+{
+ Channel *c;
+ void *v;
+ unsigned int op;
+ Task *task;
+ Alt *xalt;
+};
+
+struct Altarray
+{
+ Alt **a;
+ unsigned int n;
+ unsigned int m;
+};
+
+struct Channel
+{
+ unsigned int bufsize;
+ unsigned int elemsize;
+ unsigned char *buf;
+ unsigned int nbuf;
+ unsigned int off;
+ Altarray asend;
+ Altarray arecv;
+ char *name;
+};
+
+int chanalt(Alt *alts);
+Channel* chancreate(int elemsize, int elemcnt);
+void chanfree(Channel *c);
+int chaninit(Channel *c, int elemsize, int elemcnt);
+int channbrecv(Channel *c, void *v);
+void* channbrecvp(Channel *c);
+unsigned long channbrecvul(Channel *c);
+int channbsend(Channel *c, void *v);
+int channbsendp(Channel *c, void *v);
+int channbsendul(Channel *c, unsigned long v);
+int chanrecv(Channel *c, void *v);
+void* chanrecvp(Channel *c);
+unsigned long chanrecvul(Channel *c);
+int chansend(Channel *c, void *v);
+int chansendp(Channel *c, void *v);
+int chansendul(Channel *c, unsigned long v);
+
+
+
+
+int fdread(int, void*, int);
+int fdread1(int, void*, int);
+int fdwrite(int, void*, int);
+void fdwait(int, int);
+int fdnoblock(int);
+
+void fdtask(void*);
+
+
+
+
+enum
+{
+ UDP = 0,
+ TCP = 1,
+};
+
+int netannounce(int, char*, int);
+int netaccept(int, char*, int*);
+int netdial(int, char*, int);
+int netlookup(char*, uint32_t*);
+int netdial(int, char*, int);
+# 44 "taskimpl.h" 2
+# 55 "taskimpl.h"
+typedef unsigned long task_ulong;
+typedef unsigned int task_uint;
+typedef unsigned char task_uchar;
+typedef unsigned short task_ushort;
+typedef unsigned long long task_uvlong;
+typedef long long task_vlong;
+# 72 "taskimpl.h"
+int task_print(char*, ...);
+int task_fprint(int, char*, ...);
+char *task_snprint(char*, task_uint, char*, ...);
+char *task_seprint(char*, char*, char*, ...);
+int task_vprint(char*, va_list);
+int task_vfprint(int, char*, va_list);
+char *task_vsnprint(char*, task_uint, char*, va_list);
+char *task_vseprint(char*, char*, char*, va_list);
+char *task_strecpy(char*, char*, char*);
+# 127 "taskimpl.h"
+int getmcontext(mcontext_t*);
+void setmcontext(const mcontext_t*);
+# 141 "taskimpl.h"
+typedef struct Context Context;
+
+enum
+{
+ STACK = 8192
+};
+
+struct Context
+{
+ ucontext_t uc;
+};
+
+struct Task
+{
+ char name[256];
+ char state[256];
+ Task *next;
+ Task *prev;
+ Task *allnext;
+ Task *allprev;
+ Context context;
+ task_uvlong alarmtime;
+ task_uint id;
+ task_uchar *stk;
+ task_uint stksize;
+ int exiting;
+ int alltaskslot;
+ int system;
+ int ready;
+ void (*startfn)(void*);
+ void *startarg;
+ void *udata;
+};
+
+void taskready(Task*);
+void taskswitch(void);
+
+void addtask(Tasklist*, Task*);
+void deltask(Tasklist*, Task*);
+
+extern Task *taskrunning;
+extern int taskcount;
+# 4 "context.c" 2
+# 96 "context.c"
+void
+makecontext(ucontext_t *uc, void (*fn)(void), int argc, ...)
+{
+ int i, *sp;
+ va_list arg;
+
+ sp = (int*)uc->uc_stack.ss_sp+uc->uc_stack.ss_size/4;
+ __builtin_va_start(arg,argc);
+ for(i=0; i<4 && i<argc; i++)
+  uc->uc_mcontext.gregs[i] = __builtin_va_arg(arg,task_uint);
+ __builtin_va_end(arg);
+ uc->uc_mcontext.gregs[13] = (task_uint)sp;
+ uc->uc_mcontext.gregs[14] = (task_uint)fn;
+}
+# 130 "context.c"
+int
+swapcontext(ucontext_t *oucp, const ucontext_t *ucp)
+{
+ if(getmcontext(&(oucp)->uc_mcontext) == 0)
+  setmcontext(&(ucp)->uc_mcontext);
+ return 0;
+}

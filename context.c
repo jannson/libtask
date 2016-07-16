@@ -93,6 +93,7 @@ makecontext(ucontext_t *ucp, void (*func)(void), int argc, ...)
 #endif
 
 #ifdef NEEDARMMAKECONTEXT
+/* https://github.com/stevedekorte/io/issues/226 */
 void
 makecontext(ucontext_t *uc, void (*fn)(void), int argc, ...)
 {
@@ -101,11 +102,16 @@ makecontext(ucontext_t *uc, void (*fn)(void), int argc, ...)
 	
 	sp = (int*)uc->uc_stack.ss_sp+uc->uc_stack.ss_size/4;
 	va_start(arg, argc);
-	for(i=0; i<4 && i<argc; i++)
-		uc->uc_mcontext.gregs[i] = va_arg(arg, uint);
+
+        if(argc-- > 0) uc->uc_mcontext.arm_r0 = va_arg(arg, uint);
+        if(argc-- > 0) uc->uc_mcontext.arm_r1 = va_arg(arg, uint);
+        if(argc-- > 0) uc->uc_mcontext.arm_r2 = va_arg(arg, uint);
+        if(argc-- > 0) uc->uc_mcontext.arm_r3 = va_arg(arg, uint);
+
 	va_end(arg);
-	uc->uc_mcontext.gregs[13] = (uint)sp;
-	uc->uc_mcontext.gregs[14] = (uint)fn;
+
+        uc->uc_mcontext.arm_sp = (uint)sp;
+        uc->uc_mcontext.arm_lr = (uint)fn;
 }
 #endif
 
